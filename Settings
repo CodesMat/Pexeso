@@ -1,0 +1,16 @@
+package views;
+
+import models.HerniPole;
+
+public class Settings extends javax.swing.JFrame {
+    HerniPole pole;
+    public Settings() {
+        pole = HerniPole.getInstance();
+        initComponents();
+    }
+
+    @SuppressWarnings("unchecked")  
+     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {         
+         pole.setPocetHracu(Integer.parseInt(jTextField1.getText()));
+       pole.setPocetParu(Integer.parseInt(jTextField2.getText()));
+    } 
